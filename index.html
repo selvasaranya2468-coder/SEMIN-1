@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <div>
+        <h1>Product Dashboard</h1>
+        <p id="summary" class="summary">Loading products...</p>
+      </div>
+
+      <div class="controls">
+   
+        <input type="search" id="searchInput" placeholder="Search by product name"
+               aria-label="Search products by name" disabled>
+
+        <select id="categorySelect" aria-label="Filter by category" disabled>
+          <option value="all">All categories</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div id="dashboard" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
